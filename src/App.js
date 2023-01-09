@@ -43,7 +43,15 @@ const Map = () => {
     );
   }, []);
 
-  return <svg ref={mapContainer} width={width} height={height} />;
+  return (
+    <svg
+      ref={mapContainer}
+      viewBox="0 0 960 500"
+      width={width}
+      height={height}
+      style={{ width: '100%', height: '100%' }}
+    />
+  );
 };
 
 export default function App() {
